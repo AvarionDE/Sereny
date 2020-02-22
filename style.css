@@ -31,7 +31,7 @@ html, body {
     text-align-last: center;
     
     background-image: url(img/background.JPG);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: 100% auto;
     border: 2px solid black;
     text-shadow: 2px 2px #000000;
