@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>Sereny's Tears Opener</title>
+         
+        <meta name="description" content="Download free 4Story Hacks and Tools!">
+        <meta name="author" content="Sereny">
+        <meta name="keywords" content="4story, 4ancient, 4vision, 4retro, software, hack, tool, bot, hacks, private server, trainer">
+             
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+  
+     
+    <body>
+        <div class="background">
+            <div class="site">
+                
+                
+                <div class="banner">
+                    <img src="img/banner.jpg" />
+                </div>
+                
+                
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">About me</a></li>
+                    </ul>
+                </div>
+                  
+                
+                <div class="content">
+                    <h1>What is Sereny's Tears Opener?</h1>
+                    
+                    <p><b>Sereny's Tears Opener is a 100% free solution</b> to open your own Goddess Tear's automatically.
+                    Stop wasting your time opening each tear by hand on your own! Sit back and relax while this tool will
+                    do the work for you! This program is 100% transparent and the source code is shown below!
+                    <br /><br />
+                    This program is still in beta and erros may occur!
+                    </p>
+                    
+                    <br />
+                    <h1>Download the Tool</h1>
+                    <table class="downloads">
+                        <tr>
+                            <th>File</th>
+                            <th>Version</th>
+                            <th>Download link</th>
+                            <th>Size</th>
+                            <th>Date</th>
+                        </tr>
+
+                        <tr>
+                            <td>Tears Opener.exe</td>
+                            <td>1.0</td>
+                            <td><a href="#">Download</a></td>
+                            <td>10.2 MB</td>
+                            <td>21.02.20</td>
+                        </tr>
+                    </table>
+                    
+                    <br /><br />
+                    
+                    <h1>Video Tutorial: How to use</h1>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/HsOGJjUhPTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <br /><br />
+                    
+                    <h1>View the source code</h1>
+                    <div class="code">
+                        <code>
+                            from pynput import mouse<br />
+                            import time<br />
+                            <br />
+                            <b>#registering 3 mouse clicks</b><br />
+                            def on_click(x,y, button, pressed):<br />
+                                if pressed:<br />
+                                    mouse_cords.append((x,y))<br />
+                                    if len(mouse_cords) == 3:<br />
+                                        listener.stop()<br />
+                            <br />
+                            <b>#Start: Entering number of tears</b><br />
+                            mouse_cords = []<br />
+                            tears = int(input("How many Goddess Tears do you want to open?\n"))<br />
+                            <br />
+                            <b>#Listening to 3 mouse clicks</b><br />
+                            print("Please open one tear")<br />
+                            with mouse.Listener(on_click=on_click) as listener:<br />
+                                listener.join()<br />
+                            <br />
+                            <b>#Preparing user</b><br />
+                            input("Press ENTER if you are ready\n")<br />
+                            print("Starting in 5 seconds! Please focus the game!")<br />
+                            time.sleep(5)<br />
+                            <br />
+                            <b>#Opening the tears with the controller</b><br />
+                            print("The script will now open your tears automatically!")<br />
+                            <br />
+                            for j in range(tears):<br />
+                                cursor = mouse.Controller()<br />
+                            <br />
+                                print(str(j+1) + "...")<br />
+                                cursor.position = mouse_cords[0]<br />
+                                cursor.press(mouse.Button.left)<br />
+                                time.sleep(0.1)<br />
+                                cursor.release(mouse.Button.left)<br />
+                                <br />
+                                time.sleep(0.5)<br />
+                                cursor.position = mouse_cords[1]<br />
+                                cursor.press(mouse.Button.left)<br />
+                                time.sleep(0.1)    <br />
+                                cursor.release(mouse.Button.left) <br />
+                                <br />
+                                time.sleep(3.5)<br />
+                                cursor.position = mouse_cords[2]<br />
+                                cursor.press(mouse.Button.left)<br />
+                                time.sleep(0.1)<br />
+                                cursor.release(mouse.Button.left)<br />
+                                <br />
+                            <b>#Exit program</b><br />
+                            print("Tears successfully opened")
+                        </code>
+                    </div>       
+                </div>
+              
+              
+                <div class="footer">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCuLcs5AebK5FpzXVOxVprBg">YouTube Channel</a></li>
+                        <li><a>Copyright @ 2020 Sereny</a></li>
+                    </ul>
+                </div>        
+                  
+                                
+            </div>
+        </div>
+                
+    </body>
+
+</html>
